@@ -1,5 +1,3 @@
 def call() {
-    stage('Gitleaks Scan') {
-        sh 'gitleaks detect --source .'
-    }
+    sh 'gitleaks detect --source .'
 }

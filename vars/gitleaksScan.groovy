@@ -1,5 +1,5 @@
-def () {
+def call() {
     stage('Gitleaks Scan') {
-        sh 'gitleaks detect --source . --report-format json --report-path gitleaks-report.json'
+        sh 'gitleaks detect --source .'
     }
 }

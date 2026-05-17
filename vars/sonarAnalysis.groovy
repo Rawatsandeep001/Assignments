@@ -1,7 +1,7 @@
 def call() {
-  stage('sonarqube Analysis') {
-    withSonarQubeEnv('SonarServer') {
-      sh 'mvn sonar:sonar'
+    stage('SonarQube Analysis') {
+        withSonarQubeEnv('SonarServer') {
+            sh 'mvn sonar:sonar'
+        }
     }
-  }
 }

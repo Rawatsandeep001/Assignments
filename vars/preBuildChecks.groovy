@@ -1,5 +1,5 @@
 def call() {
-  stage("pre Build Checks') {
-        sh 'mvn clean compile checkstyle:checstyle'
-        }
+    stage('Pre Build Checks') {
+        sh 'mvn clean compile checkstyle:checkstyle'
+    }
 }

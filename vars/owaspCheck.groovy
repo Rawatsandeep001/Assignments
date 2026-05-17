@@ -1,5 +1,5 @@
 def call() {
-    stage('OWASP Dependency check') {
-        sh 'dependency-check.sh --project secretsanta --scan . --format HTML '
+    stage('OWASP Dependency Check') {
+        sh '/opt/dependency-check/bin/dependency-check.sh --project secretsanta --scan .'
     }
 }
